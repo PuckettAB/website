@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+hr.rounded {
+  border-top: 0px solid #bbb;
+  border-radius: 5px;
+}
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 50px 200px 100px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.button1:hover {
+  background-color: #ddd;
+  color: gray;
+}
+</style>
+<style>
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+div3 {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+div4 {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+div 5{
+	background-color: #eee;
+	width: 200px;
+	border: 20px solid #8ebf42;
+	padding: 30px;
+	margin: 55px;	
+}
+
+</style>
+
+<style> 
+            #leftbox {
+                float:left; 
+                background:white;
+                width:50%;
+                height:280px;
+            }
+            #middlebox{
+                float:left; 
+                background:Green;
+                width:50%;
+                height:280px;
+            }
+            #rightbox{
+                float:right;
+                background:white;
+                width:50%;
+                height:280px;
+            }
+            h1{
+                color:green;
+                text-align:center;
+            }
+</style> 
+<style> 
+            #leftbox1 {
+                float:left; 
+                background:white;
+                width:50%;
+                height:350px;
+            }
+            #rightbox1{
+                float:left; 
+                background:white;
+                width:50%;
+                height:350px;
+            }
+</style> 
+<style> 
+            #box1 {
+                float:left; 
+                background:white;
+                width:20%;
+                height:240px;
+            }
+            #box2{
+                float:left; 
+                background:white;
+                width:20%;
+                height:240px;
+            }
+            #box3{
+                float:right;
+                background:white;
+                width:20%;
+                height:240px;
+            }
+			#box4{
+                float:right;
+                background:white;
+                width:20%;
+                height:240px;
+            }
+            #box5{
+                float:right;
+                background:white;
+                width:20%;
+                height:240px;
+            }
+            h1{
+                color:white;
+                text-align:center;
+            }
+</style>
+<style> 
+            #lefthalfbox {
+                float:left; 
+                background:white;
+                width:40%;
+                height:700px;
+            }
+            #righthalfbox{
+                float:left; 
+                background:white;
+                width:60%;
+                height:700px;
+            }
+</style>
+</head>
+
+<div class="tab">
+
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Project Info')">Project Info</button>
+</div>
+
+
+<!-- Slide Show -->
+<div id="Home" class="tabcontent" style="display:block">
+<br><br>
+<section><center>
+ <img src="lightloop.png" alt="Random Name" style="div3""width:50%"></center>
+<br><br>
+</section>
+
+<section class="w3-container w3-center w3-content" ><center>
+  <h2 class="div4""p2""w3-wide" style= "font-size:40px"><center>What is Light Loop?</center></h2>
+  <p class="div4""w3-justify" ><center>The scope of this project focuses on proving the concept of near infrared light as it relates to medical imaging. Success would be measured by reading signals from laser receivers that can differentiate between different signal outputs. Output should vary based on the characteristics of the substances scanned by the system, and a final experiment should provide an active graphic representation of the data as it is read. Limited research has been committed to this area prior, but utilization of this technology would provide a safer alternative to those that employ ranges of light that expose patients to radiation. This approach also holds the potential to be reduced to a portable format, allowing devices to be transported to patients.</center></p>
+</center>
+</section>
+
+<!-- Sponsor -->
+<section class="w3-container w3-center w3-content">
+<div id = "boxes" style = "padding-right: 20px;padding-left: 20px">
+<br> <br>             
+<hr class="rounded"> 
+            <div id = "leftbox1">
+                <center><h2 style="padding-right: 80px;padding-left: 80px"><b>Sponsor</b></h2>
+                Mayo Clinic is the sponsor for Light Loop.
+<br><br>Mayo Clinic is a nonprofit organization committed to clinical practice, education and research, providing expert, whole-person care to everyone who needs healing. Our point of contact through Mayo Clinic is Dr. Antonio Forte.</center></p>
+<center><br>For more information on Mayo Clinic see the link below:</center>  
+<br>          
+			<center><button class="button button1" onclick=" window.open('https://www.mayoclinic.org/','_blank')">Info</button></center>
+			</div>            
+    <!--image of mayo clinic logo-->              
+            <div id = "rightbox1"><center>
+			<br><br>
+    <img src="mayo.png" alt="Random Name" style="width:30%">
+            </center></div>
+</section> 
+<!--Team pictures--><center>
+<section class="w3-container w3-center w3-content" style="max-width:1300px""padding-right: 20px;padding-left: 20px">
+<div id = "boxes">
+<hr class="rounded">
+<center><h2><b>Team 307 (Light Loop) Members</b></h2>
+<br>
+      <!--Box1-->
+            <div id = "box1">
+            <center>
+    <img src="peter.png" alt="Random Name" style="width:60%">
+    <p class="p2""w3-wide"><b>Peter Christian</b></p>
+        </center></div> 
+             <!--Box2-->
+            <div id = "box3"><center>
+    <img src="taelor.png" alt="Random Name" style="width:60%">
+    <p class="p2""w3-wide"><b>Taelor Campbell</b></p>
+             </center></div>
+             <!--Box3-->
+            <div id = "box3">
+            <center>
+    <img src="ben.png" alt="Random Name" style="width:60%">
+    <p class="p2""w3-wide"><b>Ben Marmoll</b></p>
+        </center></div> 
+             <!--Box4-->
+            <div id = "box4"><center>
+    <img src="alex.png" alt="Random Name" style="width:60%">
+    <p class="p2""w3-wide"><b>Alexandra Puckett</b></p>
+             </center></div>
+            <!--Box5-->
+            <div id = "box5"><center>
+    <img src="maddie.png" alt="Random Name" style="width:60%">
+    <p class="p2""w3-wide"><b>Maddie Schuh</b></p>
+             </center></div>
+<hr class="rounded">
+</center>
+</section>
+</div>
+
+<div id="Project Info" class="tabcontent" style="display:none">
+<!--gen info-->
+<section class="w3-container w3-center w3-content" ><center>
+<hr class="rounded">
+  <h2 class="div4""p2""w3-wide"><center>General Public Abstract</center></h2>
+  <hr class="rounded">
+  <p class="div4""w3-justify" ><center>Modern medicine requires imaging technology to identify hidden medical issues and treat patients. Traditional imaging devices are massive, expensive, and uses harmful radiation to high-risk patients like pregnant women and children. Research suggests near-infrared (NIR) light could be a safer and more portable alternative to medical imaging. Our project explores the use of NIR as an imaging approach and will be referred to as Light Loop.
+    Light Loop uses a series of lasers and receivers in a circular structure that determines the substance that is placed in the center. While the ultimate goal of Light Loop is to portably scan any part of the human body, our project focuses on the research behind near infrared imaging, and building an initial prototype that will detect light as it passes through various materials.
+   The Light Loop uses three main variables to categorize tissues/substances: time of flight (the time it takes the light to travel from the laser  through the subject and back to the receivers), angle of refraction, and the intensity of light the receivers pick up.
+   In order to develop imaging software, extensive testing using the Light Loop on different substances of known densities (such as air, water, fat solution, etc.) are conducted. The results of these experiments will determine a mathematical relationship between substance density and the variables discussed. The research we conduct serves to further the future of near-infrared based imaging devices.</p>
+</center>
+</section>
+
+<!--Initial experiment-->
+
+<section class="w3-container w3-center w3-content">
+<div id = "boxes1">
+<br> <br>              
+            <div id = "righthalfbox">
+			<hr class="rounded">
+  <h2 class="div4""p2""w3-wide"><center>Initial Experimentation</center></h2>
+  <hr class="rounded">
+  <p class="div4""w3-justify" >Our initial experiment was used to determine an ideal wavelength for penetration into tissue. To mimic human soft tissue we used Intralipid solution diluted with water. Intralipid mimics the scattering and absorbtion properties of soft tissue well, making it a commonly used soft tissue phantom.
+
+<br><br>To determine an ideal wavelength, we used a Spectrometer to pulse wavelengths between 650nm and 1100nm. This range is just above and just below the near infrared range. As infrared is strongly absorbed by water and visible radiation is strongly absorbed by hemoglobin, a slightly expanded near infrared range was utilized to observe these areas of the spectrum. 
+
+<br><br>Variable solutions similar to those on the graphic on the top left were used to ensure reliability of the results. The Intralipid was diluted three times, it initially began at 20% dilution with water, and was further diluted by 50% of the original dilution, then 90% of the original dilution. Ink trials were then performed to increase the inherit absorption of the Intralipid, creating a greater resemblance to soft tissue.
+
+​<br><br>To interpret our results, it was determined that the lowest absorption indicated the greatest penetration wavelength. Any absorption that peaks at 10 means that it is too high to be recorded by our scale of measurement, making it unreliable at those points. As the scale approaches 850nm, the absorption becomes more consistent. The lowest absorption is at 850nm, revealing 850nm as the ideal wavelength for soft tissue penetration. The baseline, a water cylinder,  is referenced at the bottom of each graph. Based on this wavelength, the ideal laser diode was selected for further experimentation which is indicated on the bottom left.
+</p>
+            </div>            
+    <!--image of mayo clinic logo-->              
+            <div id = "lefthalfbox"><center><br><br>
+    <img src="tubes.png" alt="Random Name" style="width:30%">
+	<br> <br>
+	<img src="laser.png" alt="Random Name" style="width:30%">
+            </center></div>
+</section>
+
+	<!--Results of Initial experiment-->
+
+	<section class="w3-container w3-center w3-content">
+	<br> <br>              
+	 <hr class="rounded">          
+	  <h2 class="div4""p2""w3-wide"><center>Initial Experimentation Results
+	</center></h2>
+	</center></h2>
+	<hr class="rounded">
+	<center>
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 8</div>
+	  <img src="slide1.png" style="width:60%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 8</div>
+	  <img src="slide2.png" style="width:60%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 8</div>
+	  <img src="slide3.png" style="width:60%">
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 8</div>
+	  <img src="slide4.png" style="width:60%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">5 / 8</div>
+	  <img src="slide5.png" style="width:60%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">6 / 8</div>
+	  <img src="slide6.png" style="width:60%">
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">7 / 8</div>
+	  <img src="slide7.png" style="width:60%">
+	</div>
+
+	<div class="mySlides fade">
+	  <div class="numbertext">8 / 8</div>
+	  <img src="slide8.png" style="width:60%">
+	</div>
+	</center>
+
+	<a class="prev" onclick="plusSlides(-1)">@</a>
+	<a class="next" onclick="plusSlides(1)">@</a>
+
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	  <span class="dot" onclick="currentSlide(5)"></span> 
+	  <span class="dot" onclick="currentSlide(6)"></span> 
+	  <span class="dot" onclick="currentSlide(7)"></span> 
+	  <span class="dot" onclick="currentSlide(8)"></span> 
+	</div>
+
+
+
+
+
+
+
+
+<section class="w3-container w3-center w3-content">
+<div id = "boxes2">
+<br> <br>              
+ <hr class="rounded">          
+  <h2 class="div4""p2""w3-wide"><center>Further Experimentation
+</center></h2>
+</center></h2>
+<hr class="rounded">
+  <p class="div4""w3-justify" style="width: 90%">
+  After determining the ideal wavelength for experimentation, the next step determines whether receivers can be used to detect the difference between solutions of high absorption and low absorption and of high scattering and low scattering.
+
+<br><br>The experimental setup for this step involved 3D printing a structure to snuggly surround a 100ml cylinder with receivers and a single 850nm laser diode, depicted as a model and a final design to the left. A blackout box is used to encapsulate the system and to adhere to laser safety guidelines, depicted below.
+<center>
+    <img src="simLoop.png" alt="Random Name" style="width:20%">
+	<img src="box.png" alt="Random Name" style="width:17%">
+            </center>
+<br><br>To test different corner cases (high absorption, high scattering - high absorption, low scattering - low absorption, high scattering - low absorption, low scattering) different substances are used in the inner beaker. These cases are illustrated below as well as the experimental setup. <br>
+    <center><img src="expSetup.png" alt="Random Name" style="width:30%">
+	<img src="expSetLabeled.png" alt="Random Name" style="width:30%"></center>
+           
+<br><br>A challenge presented by this was identifying substances with these corner case properties and determining their exact scattering and absorption coefficients. As a progressive step, the substances water, Intralipid, ink, and sand were determined to be suitable as water has low scattering and absorbance, Intralipid has average absorbance and average scattering properties, ink has high absorbance and low scattering, and sand has high scattering and low absorbance. In future experimentation, the identification of the exact scattering and absorption coefficients should be determined to reveal governing equations for the output of the receivers in relation to these properties. This would help apply the system to identify different tissue densities. </p>
+
+            </div>            
+</section>
+
+<!--final design-->
+<section class="w3-container w3-center w3-content">
+           
+ <hr class="rounded">          
+  <h2 class="div4""p2""w3-wide"><center>Detailed Design
+</center></h2>
+</center></h2>
+<hr class="rounded">
+  <p class="div4""w3-justify" style="width: 90%">
+  Initially, the final product for the Light Loop was expected to be a system that pulsed a laser through a human finger, labeled as "Patient", and projected output to an external device. This system is displayed in Figure A below. The device featured one laser emitter and three photodiode receivers. This output would then rely on the output voltage received by the lasers to map an image to an external device, i.e. a laptop, using Hounsfield Scaling. The Light Loop device design is shown in Figure B below and reflects 14 receivers and 1 Near Infrared Laser. 
+
+   <center>
+   <b>
+Figure A
+</b><br>
+    <img src="block.PNG" alt="Figure A" style="width:20%">
+   </center>
+
+   <center>
+   <b><br>
+Figure B
+</b><br>
+    <img src="rep.png" alt="Figure B" style="width:20%">
+   </center>
+
+	After discussion with a laser safety officer and in consideration of Codes and Standards pertaining to lasers, it was decided to use a substance that mimicked soft tissue throughout the entire experiment instead of just in initial stages as human subjects were no longer an option. The 3 diode concept and the 14 after consideration were changed to a more manageable but still specific 5 diode output concept to align with the goals presented by using Intralipid's properties of scattering and absorption. 5 diodes was deemed sufficient for defining scattering and absorption. 
+The use of a single laser was a consistent design decision throughout as it resulted in more palatable output and was not overwhelming to read and consider. As our final design shifted away from creating a physically mapped output, one laser was sufficient to provide a proof of concept. This proof of concept centralized on varying absorption and scattering of substances that would have light pulsed through them. This would be used to prove that Near Infrared light would be sufficient to detect minute variations in the density, reflection, absorption, scattering, and other properties of soft tissue in order to eventually map it based on the differences in voltage of receiver outputs. A final design goal was also to create a governing equation to map the relation of absorption, scattering, angle between laser and substrate, and output voltage of the receivers. 
+An Oscilloscope was initially used to collect results of our experiments but was imprecise. To increase precision, an MSP430 was intended to be used with a SD card to collect data output from our experimental trials. This would help reduce the amount of time required to complete all trials of our experiments. After some trials, the SD card did not collect data as expected and erased much of our data. In consideration of our timeline, we moved towards manually collecting outputs from Visual Studios and inputting them in an excel document.
+Our design initially began using a breadboard with jumper wires to connect photodiodes which can be seen in Figure C below, the Oscilloscope or MSP430, the power supply, and the lasers. This connection was loose and presented much noise in our outputs and often resulted in failed trials. To increase the reliability of our results and reduce the amount of failed trials, the system was soldered together with all parts except for the loose wires used to connect to the power supply and Oscilloscope or MSP430. This reduced the noise of the system and increased consistency and reliability of results as expected.
+
+   <center>
+<b>
+Figure C</b><br>
+    <img src="messy.png" alt="Figure C" style="width:20%">
+</p>
+   </center> 
+</section>
+
+<!--final design-->
+<section class="w3-container w3-center w3-content">
+           
+ <hr class="rounded">          
+  <h2 class="div4""p2""w3-wide"><center>Final Detailed Design
+</center></h2>
+</center></h2>
+<hr class="rounded">
+  <p class="div4""w3-justify" style="width: 90%">
+ In the final design, a circular, 3D printed loop was used with 5 photodiode receivers and 1 laser emitter. The amount of receivers was chosen to create an even angle distribution around the loop for preliminary results. While the design entailed 5 receivers, two of them became defunct in our initial experimentation and only three diodes were viable. We used 5 holes in the oriented loop and simply moved the 3 diodes around the loop in between tests to collect complete results. We will consider this to be a 5 diode output result as our final design.
+<br><br>A MSP430 was used to intake results from the photodiode receivers more efficiently. This system was connected to each of the photodiode receivers to collect the voltage output. A C program was used to collect the data of the 3 functioning receivers 3 at a time and computed the average of the outputs, outputting one voltage for each receiver to collect for each concentration trial of our substances. This data was compiled into excel documents to review and produce output charts. 
+<br><br>Our final circuit design that connected each of the inputs and outputs as well as parts is pictured in Figure D below. A gain of 28.5 was used, incorporating resistors of 1.8k. This gain provided a max output voltage of around 3.1V. This was done because the MSP430 microcontroller takes a max voltage to its GPIO pins of 3.3V. The MSP430 also has a 12 bit ADC which means it is capable of discerning 4096 different values. It has a resolution of 805uV. This was sufficient to hold enough specificity in data output and reflected differences in concentrations of the substances that were used in experimentation.
+
+<br><br><center><b>Figure D</b><br>
+<img src="finalDesign.png" alt="Figure C" style="width:20%">
+</center>
+
+<br><br>The substance used to mimic human soft tissue, Intralipid, mimicked the scattering and absorption properties of human soft tissue. To fully utilize these properties, the experiment was centered around defining the voltage output in relation to these properties. The designated output for the final design was centered around the connection between voltage, angle of receiver, and relation to absorption and scattering for this reason. Substances used to test and produce output for our design were Intralipid (high scattering and high absorption), water (low scattering and absorption), and water with India Ink (low scattering, high absorption). India Ink was used in the water as India Ink in Intralipid mimics the absorption properties of soft tissue better than Intralipid alone, so we applied this concept to better the absorption properties of the water. From experimentation with a spectrometer, the absorption using India Ink was notably high and difficult to read when used in conjunction with Intralipid, especially when used with Intralipid at its maximum concentration. Readings were consistent at times with expected results for Intralipid alone, but not consistent enough to pursue its combined usage. Using India Ink with water was a good alternative for our results. The substances intralipid and water and ink were used at different concentration levels to determine how increased absorption or scattering affected output results to prove our concept.
+<br><br>Our goal of proving the concept of usage of near infrared right in imaging technology was deemed to be more sufficient and manageable than producing a density mapped image of a human finger. With the regulations on using a human for experimentation and the timeline of the semester, this was a more efficient and centralized final design. 
+</p>
+   </center> 
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-center w3-black w3-xlarge">
+
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
